@@ -1,20 +1,24 @@
 #include <stdio.h>
 
-main()
+int main()
 {
+  char nome[20];
   float av1;
   float av2;
   float media;
     
-  printf("\nEntre com a nota da AV1:");
-  scanf("%f", &av1);
+  printf("\nQual é o seu nome?\n");
+  scanf("%s", nome);
   
+  printf("\nEntre com a nota da Av1:");
+  scanf("%f", &av1);
+    
   printf("\nEntre com a nota da Av2:");
   scanf("%f", &av2);
-  
+    
   media=(av1+av2)/2;
     
-    printf("\nA sua média foi de %.2f\n", media);
+  printf("\nOlá %s, a sua média foi de %.1f\n", nome, media);
   
   return 0;
 }
